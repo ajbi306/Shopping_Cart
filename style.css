@@ -1,0 +1,159 @@
+*{
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: serif;
+}
+
+.navbar{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: #99C4C8;
+padding: 15px 50px;
+margin-bottom: 30px;
+}
+
+.cart{
+  position: relative;
+  background-color: white;
+  font-size: 30px;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.cartamount{
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  font-size: 15px;
+  background-color:#B20600 ;
+  color: black;
+  padding: 3px;
+  border-radius: 2px;
+}
+
+.shop{
+
+ display: grid;
+ grid-template-columns: repeat(4,224px);
+ gap: 30px;
+ justify-content: center;
+   
+}
+ @media (max-width: 1000px){
+  .shop{
+    grid-template-columns: repeat(2,224px);
+  }
+ }
+
+ @media (max-width: 500px){
+  .shop{
+    grid-template-columns: repeat(1,224px);
+  }
+ }
+.items {
+
+  border: 2px solid black;
+  border-radius: 4px;
+} 
+.details{
+
+  padding: 5px;
+
+}
+.price-quantity{
+  display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-content: center;
+}
+.button{
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+}
+
+a{
+    text-decoration: none;
+     color: white;
+}
+
+.text-center{
+
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.HomeBtn,.checkout,.removeAll{
+
+  background-color: black;
+   color: white;
+   padding: 2px;
+   border-radius: 3px;
+   cursor: pointer;
+   margin-top: 10px;
+}
+
+
+
+.shoppingcart{
+  display: grid;
+  grid-template-columns: repeat(1,320px);
+  justify-content: center;
+  gap: 15px;
+  
+
+}
+
+.cart-name{
+
+    border:  2px solid black;
+   border-radius: 5px;
+   display: flex;
+  
+}
+
+.bi bi-x-lg{
+  color: 2px solid red;
+
+  font-weight: 2;
+
+
+}
+.label{
+  border: solid 4px;
+  margin-bottom: 30px;
+}
+
+.tittle-price-x{
+
+  width: 190px;
+  display: flex;
+  align-items: centre;
+  justify-content: space-between;
+ 
+
+}
+
+.tittle-price{
+   gap: 4px;
+  display: flex;
+   
+  justify-content: space-between;
+}
+
+.cart-price{
+  background-color: black;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.button{
+  margin-top: 2px;
+}
